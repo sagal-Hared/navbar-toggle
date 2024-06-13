@@ -1,0 +1,53 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0080BA;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .left p {
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    gap: 18px;
+}
+
+nav .right ul li {
+    list-style: none;
+    font-size: 27px;
+    text-transform: capitalize;
+}
+.fa-solid{
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    display: none !important;
+    
+}
+.display-none{
+    display: none !important;
+}
+@media(max-width :940px){
+    .right ul{
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 40px;
+        color: black;
+        background: white;
+    }
+    .right ul li a{
+      
+        color: black;
+    }
+.fa-solid{
+    display: block !important;
+}
+}
